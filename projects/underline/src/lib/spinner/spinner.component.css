@@ -1,0 +1,8 @@
+.und-spinner {
+    display: inline-block;
+}
+
+.und-spinner__circle--hidden,
+.und-spinner__checkmark--hidden {
+    stroke: transparent;
+}

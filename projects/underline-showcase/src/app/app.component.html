@@ -1,2 +1,9 @@
-<und-button></und-button>
-<und-spinner></und-spinner>
+<div class='spinner-wrapper'>
+    <und-spinner [config]='config'></und-spinner>
+</div>
+
+<div>
+    <button (click)='onStartSpinner()'>Start</button>
+    <button (click)='onStopSpinner()'>Stop</button>
+    <button (click)='onResetSpinner()'>Reset</button>
+</div>

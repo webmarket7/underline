@@ -1,1 +1,29 @@
-<p>spinner works!</p>
+<svg version='1.1'
+     xmlns='http://www.w3.org/2000/svg'
+     baseProfile='full'
+     preserveAspectRatio='xMidYMid'
+     [attr.width]='circleDiameter'
+     [attr.height]='circleDiameter'
+     attr.viewBox='0 0 {{ circleDiameter || 0 }} {{ circleDiameter || 0 }}'
+>
+    <circle #circle
+            class='und-spinner__circle und-spinner__circle--hidden'
+            fill='none'
+            transform-origin='center'
+            [attr.cx]='outerRadius'
+            [attr.cy]='outerRadius'
+            [attr.r]='innerRadius'
+            [attr.stroke]='circleStroke'
+            [attr.stroke-width]='circleStrokeWidth'
+    ></circle>
+    <polyline *ngIf='withCheckmark'
+              #checkmark
+              class='und-spinner__checkmark und-spinner__checkmark--hidden'
+              fill='none'
+              stroke-linecap='round'
+              [attr.points]='checkmarkPoints'
+              [attr.stroke]='checkmarkStroke'
+              [attr.stroke-dasharray]='this.circleDiameter'
+              [attr.stroke-width]='checkmarkStrokeWidth'
+    />
+</svg>

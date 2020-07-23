@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UndButtonModule, UndSpinnerModule } from 'underline';
+import { UndSpinnerModule } from 'underline';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -12,8 +13,8 @@ import { UndButtonModule, UndSpinnerModule } from 'underline';
     ],
     imports: [
         BrowserModule,
+        BrowserAnimationsModule,
         AppRoutingModule,
-        UndButtonModule,
         UndSpinnerModule
     ],
     providers: [],

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UndSpinnerComponent } from './spinner.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -8,7 +9,8 @@ import { UndSpinnerComponent } from './spinner.component';
         UndSpinnerComponent
     ],
     imports: [
-        CommonModule
+        CommonModule,
+        BrowserAnimationsModule
     ],
     exports: [
         UndSpinnerComponent
